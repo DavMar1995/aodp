@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='工作表1(資料列表)' inline='true' name='federated.0gefnu316jn3nz1bxkfyn0tqj7lk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='資料列表' name='excel-direct.0w4d0vl194me1o13snw4z1g8vhxm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/tebleau/小芬計畫01/資料列表.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0w4d0vl194me1o13snw4z1g8vhxm' name='工作表1' table='[工作表1$]' type='table'>
+          <columns gridOrigin='A1:E1070:no:A1:E1070:0' header='yes' outcome='2'>
+            <column datatype='integer' name='序號' ordinal='0' />
+            <column datatype='string' name='公司' ordinal='1' />
+            <column datatype='string' name='單位' ordinal='2' />
+            <column datatype='string' name='資料' ordinal='3' />
+            <column datatype='string' name='資料來源' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>序號</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[序號]</local-name>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias>序號</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>公司</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[公司]</local-name>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias>公司</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>單位</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[單位]</local-name>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias>單位</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>資料</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[資料]</local-name>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias>資料</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>資料來源</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[資料來源]</local-name>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias>資料來源</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[工作表1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E1070:no:A1:E1070:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[單位]' role='dimension' type='nominal' />
+      <column-instance column='[單位]' derivation='None' name='[none:單位:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.536351' measure-ordering='alphabetic' measure-percentage='0.463649' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:單位:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;中華郵政&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;交通部&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;金融監督管理委員會銀行局&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;國防部&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;新竹市政府&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;台灣高速鐵路股份有限公司&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;行政院原住民族委員會&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;財政部財稅中心&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;勞動部勞動力發展署&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;聯合信用卡中心&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;中央研究院&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;外交部&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;行政院環境保護署&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;財務部統計處&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;新北市政府交通局&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;公共運輸整合資訊流通服務平臺&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;行政院人事行政總處&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;科技部&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;國家圖書館&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;臺北大眾捷運股份有限公司&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;中華郵政股份有限公司&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;各地方政府觀光旅遊局&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;南投縣政府&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;國家災害防救科技中心&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;經濟部&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;中央氣象局&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;外交部領事事務局&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;金管會&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;高雄市政府衛生局&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;新北市政府社會局&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;台灣中油股份有限公司&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;行政院政府採購網&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;財政部 統計處&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;勞動部&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;環保署&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; (日本) 國土交通省觀光廳&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;台灣經濟研究院&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;行政院農業委員會&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;財政部統計處&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;智慧財產局&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;聯合信用卡處理中心&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;台北松山機場&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;行政院主計總處&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;財政部&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;教育部統計處&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;澎湖縣政府&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;中央銀行&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;民政司&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;金融監督管理委員會&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;高雄國際航空站&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;新北市政府衛生局&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;文化部&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;行政院內政部地政司&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;原住民族委員會&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;國發會&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;臺北市政府&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;台中市政府&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;行政院文化部&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;桃園市政府工務局&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;國際貿易局&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;臺灣金融控股股份有限公司&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;台鐵&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;行政院客家委員會&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;財政部 財政資訊中心&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;勞動力發展署&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;衛生福利部&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;台灣自來水股份有限公司&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;行政院原子能委員會&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;財政部財政資訊中心&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;勞動部勞工保險局&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;總統府&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;中選會&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;各縣市政府&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;南投縣農產運銷公司&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;國家通訊傳播委員會&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;農委會&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;中央選舉委員會&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;立法院&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;金融監督管理委員會 銀行局&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;國土測繪中心&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;新北市教育局&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;0&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;台灣電力股份有限公司&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;行政院環保署&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;財政部電子發票整合服務平台&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;雲林縣政府&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;警政署&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;台北大眾捷運股份有限公司&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;行政院主計處&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;桃園國際機場股份有限公司&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;教育部&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;臺灣糖業股份有限公司&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;內政部&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;各縣政府計畫處&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;南投縣農會&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;國家發展委員會&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;嘉義縣政府&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;人事行政局&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;台灣糖業股份有限公司&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;行政院環境保護暑&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;財政部關務署&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;新北市政府工務局&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='應用開放來源的中央層級之部會分析 '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='標楷體' fontsize='18'>應用開放來源的中央層級之部會分析</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Microsoft JhengHei' fontsize='18'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='工作表1(資料列表)' name='federated.0gefnu316jn3nz1bxkfyn0tqj7lk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gefnu316jn3nz1bxkfyn0tqj7lk'>
+            <column-instance column='[單位]' derivation='Count' name='[cnt:單位:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[單位]' derivation='None' name='[none:單位:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[單位]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:單位:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;交通部&quot;</bucket>
+              <bucket>&quot;衛生福利部&quot;</bucket>
+              <bucket>&quot;經濟部&quot;</bucket>
+              <bucket>&quot;內政部&quot;</bucket>
+              <bucket>&quot;金融監督管理委員會&quot;</bucket>
+              <bucket>&quot;行政院農業委員會&quot;</bucket>
+              <bucket>&quot;臺北市政府&quot;</bucket>
+              <bucket>&quot;文化部&quot;</bucket>
+              <bucket>&quot;行政院主計總處&quot;</bucket>
+              <bucket>&quot;教育部&quot;</bucket>
+              <bucket>&quot;金融監督管理委員會銀行局&quot;</bucket>
+              <bucket>&quot;行政院環境保護署&quot;</bucket>
+              <bucket>&quot;國家災害防救科技中心&quot;</bucket>
+              <bucket>&quot;0&quot;</bucket>
+              <bucket>&quot;財政部關務署&quot;</bucket>
+              <bucket>&quot;財政部統計處&quot;</bucket>
+              <bucket>&quot;勞動部&quot;</bucket>
+              <bucket>&quot;智慧財產局&quot;</bucket>
+              <bucket>&quot;中央銀行&quot;</bucket>
+              <bucket>&quot;新竹市政府&quot;</bucket>
+              <bucket>&quot;各地方政府觀光旅遊局&quot;</bucket>
+              <bucket>&quot;金融監督管理委員會 銀行局&quot;</bucket>
+              <bucket>&quot;台中市政府&quot;</bucket>
+              <bucket>&quot;國家發展委員會&quot;</bucket>
+              <bucket>&quot;教育部統計處&quot;</bucket>
+              <bucket>&quot;財政部財政資訊中心&quot;</bucket>
+              <bucket>&quot;財政部&quot;</bucket>
+              <bucket>&quot;行政院客家委員會&quot;</bucket>
+              <bucket>&quot;中華郵政&quot;</bucket>
+              <bucket>&quot;環保署&quot;</bucket>
+              <bucket>&quot;國土測繪中心&quot;</bucket>
+              <bucket>&quot;財政部 財政資訊中心&quot;</bucket>
+              <bucket>&quot;原住民族委員會&quot;</bucket>
+              <bucket>&quot;科技部&quot;</bucket>
+              <bucket>&quot;行政院原住民族委員會&quot;</bucket>
+              <bucket>&quot;行政院人事行政總處&quot;</bucket>
+              <bucket>&quot;各縣政府計畫處&quot;</bucket>
+              <bucket>&quot;各縣市政府&quot;</bucket>
+              <bucket>&quot;臺灣糖業股份有限公司&quot;</bucket>
+              <bucket>&quot;新北市政府工務局&quot;</bucket>
+              <bucket>&quot;勞動部勞動力發展署&quot;</bucket>
+              <bucket>&quot;勞動部勞工保險局&quot;</bucket>
+              <bucket>&quot;桃園國際機場股份有限公司&quot;</bucket>
+              <bucket>&quot;行政院環境保護暑&quot;</bucket>
+              <bucket>&quot;行政院主計處&quot;</bucket>
+              <bucket>&quot;行政院文化部&quot;</bucket>
+              <bucket>&quot;立法院&quot;</bucket>
+              <bucket>&quot;台灣自來水股份有限公司&quot;</bucket>
+              <bucket>&quot;嘉義縣政府&quot;</bucket>
+              <bucket>&quot;新北市政府交通局&quot;</bucket>
+              <bucket>&quot;國發會&quot;</bucket>
+              <bucket>&quot;國防部&quot;</bucket>
+              <bucket>&quot;財政部電子發票整合服務平台&quot;</bucket>
+              <bucket>&quot;桃園市政府工務局&quot;</bucket>
+              <bucket>&quot;行政院環保署&quot;</bucket>
+              <bucket>&quot;民政司&quot;</bucket>
+              <bucket>&quot;外交部領事事務局&quot;</bucket>
+              <bucket>&quot;外交部&quot;</bucket>
+              <bucket>&quot;台灣中油股份有限公司&quot;</bucket>
+              <bucket>&quot;中華郵政股份有限公司&quot;</bucket>
+              <bucket>&quot;中央氣象局&quot;</bucket>
+              <bucket>&quot; (日本) 國土交通省觀光廳&quot;</bucket>
+              <bucket>&quot;警政署&quot;</bucket>
+              <bucket>&quot;聯合信用卡處理中心&quot;</bucket>
+              <bucket>&quot;聯合信用卡中心&quot;</bucket>
+              <bucket>&quot;總統府&quot;</bucket>
+              <bucket>&quot;澎湖縣政府&quot;</bucket>
+              <bucket>&quot;臺灣金融控股股份有限公司&quot;</bucket>
+              <bucket>&quot;臺北大眾捷運股份有限公司&quot;</bucket>
+              <bucket>&quot;農委會&quot;</bucket>
+              <bucket>&quot;新北市教育局&quot;</bucket>
+              <bucket>&quot;新北市政府衛生局&quot;</bucket>
+              <bucket>&quot;新北市政府社會局&quot;</bucket>
+              <bucket>&quot;雲林縣政府&quot;</bucket>
+              <bucket>&quot;勞動力發展署&quot;</bucket>
+              <bucket>&quot;國際貿易局&quot;</bucket>
+              <bucket>&quot;國家圖書館&quot;</bucket>
+              <bucket>&quot;國家通訊傳播委員會&quot;</bucket>
+              <bucket>&quot;高雄國際航空站&quot;</bucket>
+              <bucket>&quot;高雄市政府衛生局&quot;</bucket>
+              <bucket>&quot;財務部統計處&quot;</bucket>
+              <bucket>&quot;財政部財稅中心&quot;</bucket>
+              <bucket>&quot;財政部 統計處&quot;</bucket>
+              <bucket>&quot;南投縣農會&quot;</bucket>
+              <bucket>&quot;南投縣農產運銷公司&quot;</bucket>
+              <bucket>&quot;南投縣政府&quot;</bucket>
+              <bucket>&quot;金管會&quot;</bucket>
+              <bucket>&quot;行政院原子能委員會&quot;</bucket>
+              <bucket>&quot;行政院政府採購網&quot;</bucket>
+              <bucket>&quot;行政院內政部地政司&quot;</bucket>
+              <bucket>&quot;台灣糖業股份有限公司&quot;</bucket>
+              <bucket>&quot;台灣電力股份有限公司&quot;</bucket>
+              <bucket>&quot;台灣經濟研究院&quot;</bucket>
+              <bucket>&quot;台灣高速鐵路股份有限公司&quot;</bucket>
+              <bucket>&quot;台鐵&quot;</bucket>
+              <bucket>&quot;台北松山機場&quot;</bucket>
+              <bucket>&quot;台北大眾捷運股份有限公司&quot;</bucket>
+              <bucket>&quot;公共運輸整合資訊流通服務平臺&quot;</bucket>
+              <bucket>&quot;中選會&quot;</bucket>
+              <bucket>&quot;中央選舉委員會&quot;</bucket>
+              <bucket>&quot;中央研究院&quot;</bucket>
+              <bucket>&quot;人事行政局&quot;</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:單位:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[cnt:單位:qk]</rows>
+        <cols>[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:單位:nk]</cols>
+      </table>
+      <simple-id uuid='{2B9CE1A7-C435-406C-88D6-3725DC64FFF2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='應用開放來源的中央層級之部會分析 -story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='標楷體'>應用開放來源的中央層級之部會分析</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Microsoft JhengHei'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='border-width' id='story-description_6' value='0' />
+          <format attr='border-style' id='story-description_6' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='1' param='vert' removable='false' type='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5208' id='3' type='title' w='98828' x='586' y='1042' />
+            <zone h='8203' id='4' paired-zone-id='5' removable='false' type='flipboard-nav' w='98828' x='586' y='6250' />
+            <zone h='84505' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98828' x='586' y='14453'>
+              <flipboard active-id='1' nav-type='dot' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='應用開放來源的中央層級之部會分析 ' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='17969' id='6' story-point-id='1' type='text' w='33309' x='49195' y='24349'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#898989' fontname='標楷體'>觀察中央層級被應用的資料之提供單位，以交通部最多，第二至第五名分別是經濟部、內政部、衛生福利部及環境保護署</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{3A0F5790-DB51-46A9-AC2B-3EA59CAD0DA9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='應用開放來源的中央層級之部會分析 '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:單位:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:單位:nk]</field>
+            <field>[federated.0gefnu316jn3nz1bxkfyn0tqj7lk].[none:資料來源:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4618D3EE-074A-4D64-BFA8-DE9DD985EB9B}' />
+    </window>
+    <window class='dashboard' name='應用開放來源的中央層級之部會分析 -story'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{59DFD849-1771-47F3-A4D0-49E5BCD5D92F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='應用開放來源的中央層級之部會分析 ' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='應用開放來源的中央層級之部會分析 -story' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
