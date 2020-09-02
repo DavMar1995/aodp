@@ -1,0 +1,3 @@
+This storyboard presents the anlysis of the overall Taiwanese affected case number in terms of five stories. Figure A shows that 2015 is the peaking year with most affected cases. Figure B shows that people aged over 70 years old was the largest group get affectec. Figure C shows that the distribution of affected cases between male and female were sightly different across various age groups; in sum, young male and old female seemd to get affected more easier. Figure D shows that Kaohsiung City and Tainan City were the major epidemic areas during 1998 to 2020. Figure E shows that imported affected cases came mostly from the Asia regions.
+
+This work is a derivative of 登革熱近12個月每日確定病例統計 by data.gov.tw licensed under Open Government Data License, version 1.0.

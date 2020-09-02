@@ -1,0 +1,3 @@
+This story board depicts the origins of foresign visitors to Taiwan during 2002-2018. The first figure displays the continent-of-the-origin of foreign visitors; the second figure present the country-of-the-origin of foreign visitors. Users can click the arrow buttons on the right-hand side to show data distribution of each year automatically.
+
+This work is a derivative of 歷年來台旅客國籍統計 by data.gov.tw licensed under Open Government Data License, version 1.0.

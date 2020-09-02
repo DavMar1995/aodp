@@ -1,0 +1,3 @@
+This story board depicts the destinations of Taiwanese travellers during 2002-2018. Users can click the arrow buttons on the right-hand side to show the rolling data distribution of each year automatically.<p>This work is a derivative of 歷年中華民國國民出國目的地人數統計 by data.gov.tw licensed under Open Government Data License, version 1.0.</p>
+
+

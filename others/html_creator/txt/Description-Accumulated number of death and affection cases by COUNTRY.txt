@@ -1,0 +1,5 @@
+This figure depicts the accumulated number of death and affection cases by COUNTRY. The geographic map uses various colors to represent the the magnitude of the number.
+
+This work is a derivative of COVID-19各國家地區累積病例數與死亡數 by data.gov.tw licensed under Open Government Data License, version 1.0.
+
+
