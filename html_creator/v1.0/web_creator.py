@@ -88,6 +88,10 @@ def createFile(data):
 
 
 if __name__ == '__main__':
-    for i in getData():
+    haveStart = True
+    before = 9
+    length = 1
+    
+    for i in getData(haveStart, before, length):
         print(i['filename'])
         createFile(i)
